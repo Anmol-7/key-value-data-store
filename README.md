@@ -16,7 +16,7 @@ Build a file-based key-value data store that supports the basic CRD (create, rea
 6. Every key supports setting a Time-To-Live property when it is created. This property is optional. If  provided, it will be evaluated as an integer defining the number of seconds the key must be  retained in the data store. Once the Time-To-Live for a key has expired, the key will no longer be available for Read or Delete operations. 
 7. Appropriate error responses must always be returned to a lenient if it uses the data store in unexpected ways or breaches any limits. 
 
-### The data store will also support the following non-functionalrequirements. 
+### The data store will also support the following non-functional requirements. 
 
 1. The size of the file storing data must never exceed 1GB. 
 2. More than one client process cannot be allowed to use the same file as a data store at any given time. 
